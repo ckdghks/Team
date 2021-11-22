@@ -1,16 +1,16 @@
 #include <iostream>
-#define DATA_SIZE 10
-#define MENU 3
+#define DATA_SIZE 10  // 데이터 배열 크기
+#define MENU 3  // 품목 종류
 using namespace std;
 
 //---- 입력 클래스----
 class Data {
   private:
-    int data[DATA_SIZE] = { 0 };
+    int data[DATA_SIZE] = { 0 };  // 데이터 배열
   public:
-    void Insert_Data();
-    int* getData() { return data; }
-    void printData();
+    void Insert_Data(); // 데이터를 집어넣는 홤수
+    int* getData() { return data; } // 멤버 변수 data의 포인터 반환
+    void printData(); // 현재 데이터의 상태를 출력하는 함수.
 };
 
 // 데이터 객체 내의 배열(data)에 입력 받은 데이터(tmp)를 저장하는 용도.
